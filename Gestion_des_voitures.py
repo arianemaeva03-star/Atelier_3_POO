@@ -1,3 +1,6 @@
+from xml.dom.minidom import ElementInfo
+
+
 class Voiture:
    def __init__(self, matricule, marque, couleur):
        self.matricule = matricule
@@ -11,15 +14,24 @@ class Parc:
        self.adresse = adresse
        self.capacite = capacite
        self.listeVoitures=[]
-   def enterVoiture(self, voiture):
+   def entrerVoiture(self, voiture):
        if Voiture in self.listeVoitures:
-           print("Voiture existe deja")
+           print(f"la Voiture existe deja")
            return
        if len(self.listeVoitures) >= self.capacite:
-           print("il y'a plus d'espace dans le parc")
+           print(f"il y'a plus d'espace dans le parc")
            return
        self.listeVoitures.append(Voiture)
-       print("la Voiture peut entrer")
+       print(f"la Voiture peut entrer")
+   def sortirVoiture(self, voiture):
+       if voiture not in self.listeVoitures:
+           print("la Voiture n'existe pas")
+           return
+       self.listeVoitures.remove(voiture)
+       print(f"la Voiture peut sortir")
+       print (f"place libre: {self.calculer_le_nombre_de_places_disponible}")
+
+
 
 
 
