@@ -29,6 +29,8 @@ class Parc:
        print (f"place libre: {self.calculer_le_nombre_de_places_disponible}")
    def calculer_le_nombre_de_places_disponible(self):
        return self.capacite - len(self.listeVoitures)
+p1=Parc("Id008", "Dawes Rd", "3")
+
 
 
 
