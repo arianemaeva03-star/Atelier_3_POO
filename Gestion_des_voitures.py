@@ -33,6 +33,10 @@ p1=Parc("Id008", "Dawes Rd", "3")
 v1=Voiture("AAA245", "Toyota", "Noir")
 v2=Voiture("ACA547", "Honda", "Violet")
 v3=Voiture("JFZ620", "Mercedes", "Rouge")
+p1.entrerVoiture(v1)
+p1.entrerVoiture(v2)
+p1.entrerVoiture(v3)
+p1.sortirVoiture(v1)
 
 
 
