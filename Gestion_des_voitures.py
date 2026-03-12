@@ -30,6 +30,10 @@ class Parc:
    def calculer_le_nombre_de_places_disponible(self):
        return self.capacite - len(self.listeVoitures)
 p1=Parc("Id008", "Dawes Rd", "3")
+v1=Voiture("AAA245", "Toyota", "Noir")
+v2=Voiture("ACA547", "Honda", "Violet")
+v3=Voiture("JFZ620", "Mercedes", "Rouge")
+
 
 
 
