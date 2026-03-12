@@ -1,6 +1,3 @@
-from xml.dom.minidom import ElementInfo
-
-
 class Voiture:
    def __init__(self, matricule, marque, couleur):
        self.matricule = matricule
@@ -30,6 +27,9 @@ class Parc:
        self.listeVoitures.remove(voiture)
        print(f"la Voiture peut sortir")
        print (f"place libre: {self.calculer_le_nombre_de_places_disponible}")
+   def calculer_le_nombre_de_places_disponible(self):
+       return self.capacite - len(self.listeVoitures)
+
 
 
 
